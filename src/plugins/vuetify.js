@@ -10,8 +10,11 @@ const options = {
     theme: {
         themes: {
           light: {
+            success: '#00D07E',
+            secondary: '#efefef'
           },
           dark: {
+            success: '#00D07E',
           },
         },
       },

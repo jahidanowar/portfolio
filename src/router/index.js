@@ -4,11 +4,21 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+
   const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Jahid ANowar - Full Stack Web Developer',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'The about page of our example app.'
+        }
+      ]
+    }
   },
   {
     path: '/about',
@@ -21,6 +31,8 @@ Vue.use(VueRouter)
     }
   }
 ]
+
+
 
 const router = new VueRouter({
   routes,
